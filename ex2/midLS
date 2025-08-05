@@ -1,0 +1,1 @@
+ls -1t | grep -v '^\\.' | while read f; do [ -d "$f" ] && printf "%s/, " "$f" || printf "%s, " "$f"; done | sed 's/, $//'
